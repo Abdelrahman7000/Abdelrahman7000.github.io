@@ -1,4 +1,4 @@
-title: "Michael Shoemaker — Data Engineering"
+title: "Abdelrahman Shaban"
 description: "Production-like data engineering builds, explained clearly."
 baseurl: ""
 url: ""
@@ -9,9 +9,9 @@ defaults:
   - scope: { path: "" }
     values:
       layout: default
-author: "Michael Shoemaker"
-github_username: "MichaelShoemaker"
-youtube_channel: "@dataslinger6379"
-medium_username: "dataslinger"
+author: "Abdelrahman Shaban"
+github_username: "Abdelrahman7000"
+#youtube_channel: "@dataslinger6379"
+#medium_username: "dataslinger"
 exclude:
   - "README.md"
