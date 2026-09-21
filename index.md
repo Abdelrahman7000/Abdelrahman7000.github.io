@@ -231,7 +231,7 @@ title: "Home"
 
 
 <!-- ===================== Articles ===================== -->
-<section id="articles" class="section">
+<!-- <section id="articles" class="section">
   <div class="section-header">
     <h2>✍️ Articles</h2>
     <a class="view-all" href="https://medium.com/@{{ site.medium_username }}" target="_blank" rel="noopener">Medium →</a>
@@ -283,7 +283,7 @@ title: "Home"
       {% endfor %}
     </div>
   {% endif %}
-</section>
+</section> -->
 
 <!-- Tiny helper script for arrow buttons -->
 <script>
