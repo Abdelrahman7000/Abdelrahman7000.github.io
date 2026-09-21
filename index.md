@@ -21,17 +21,48 @@ title: "Home"
 
 <section id="about" class="section">
   <div class="about-container">
-    <img src="{{ '/assets/images/me.jpeg' | relative_url }}"
-         alt="Michael Shoemaker"
-         class="profile-pic">
-
     <div class="about-text">
-      <h1>Hello World! I'm Michael Shoemaker</h1>
-      <p>Senior Data Analyst | Teacher | Content Creator | .5x Programmer</p>
-      <p>I build practical, production-like data engineering systems — orchestration, storage, transformations, serving, and observability — then explain the decisions behind them.</p>
-      <p><strong>Core skills:</strong> Python · SQL · Linux · Airflow · Spark · BigQuery · Docker · GCP</p>
+      <h1>Hello World! I'm Abdelrahman Shaban</h1>
+      <p>Data Engineer | Analytics Engineer</p>
+      <p>I build practical, data pipelines — orchestration, storage, transformations, and serving — to drive business-critical data engineering projects.</p>
+      
+      <p><strong>Core skills:</strong></p>
+      <ul class="skills-list" style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;">
+        <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" width="18" height="18">
+          Python
+        </li>
+        <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL logo" width="18" height="18">
+          SQL
+        </li>
+        <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux logo" width="18" height="18">
+          Linux
+        </li>
+        <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg" alt="Airflow logo" width="18" height="18">
+          Airflow
+        </li>
+        <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachespark/apachespark-original.svg" alt="Spark logo" width="18" height="18">
+          Spark
+        </li>
+        <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="BigQuery logo" width="18" height="18">
+          BigQuery
+        </li>
+        <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker logo" width="18" height="18">
+          Docker
+        </li>
+        <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP logo" width="18" height="18">
+          GCP
+        </li>
+      </ul>
 
-      <p class="social-links">
+      <p class="social-links" style="margin-top: 1.5rem;">
         <a href="https://www.linkedin.com/in/michaelshoemaker1" target="_blank" aria-label="LinkedIn">
           <i class="fa-brands fa-linkedin"></i>
         </a>
