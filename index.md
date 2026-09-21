@@ -44,22 +44,45 @@ title: "Home"
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg" alt="Airflow logo" width="18" height="18">
           Airflow
         </li>
-        <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachespark/apachespark-original.svg" alt="Spark logo" width="18" height="18">
-          Spark
+       <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachespark/apachespark-original.svg" alt="PySpark logo" width="18" height="18">
+          PySpark
         </li>
-        <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="BigQuery logo" width="18" height="18">
-          BigQuery
-        </li>
+        
         <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker logo" width="18" height="18">
           Docker
         </li>
+
         <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP logo" width="18" height="18">
-          GCP
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dbt/dbt-original.svg" alt="dbt logo" width="18" height="18">
+          dbt
         </li>
+
+        <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/alteryx.svg" alt="Alteryx logo" width="18" height="18" style="filter: invert(1);">
+          Alteryx
+        </li>
+
+        <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL logo" width="18" height="18">
+          PostgreSQL
+        </li>
+        <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/snowflake.svg" alt="Snowflake logo" width="18" height="18" style="filter: invert(1);">
+          Snowflake
+        </li>
+
+        <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS logo" width="18" height="18" style="filter: invert(1);">
+          AWS
+        </li>
+
+        <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform logo" width="18" height="18">
+          Terraform
+        </li>
+        
       </ul>
 
       <p class="social-links" style="margin-top: 1.5rem;">
