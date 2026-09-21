@@ -101,52 +101,66 @@ title: "Home"
 </section>
 
 <!-- ===================== Videos ===================== -->
-<section id="videos" class="section">
+<section id="certificates" class="section">
   <div class="section-header">
-    <h2>🎥 Videos</h2>
-    <a class="view-all" href="https://youtube.com/{{ site.youtube_channel }}" target="_blank" rel="noopener">Channel →</a>
+    <h2>📜 Certifications</h2>
   </div>
 
-  {% assign videos_count = site.data.videos | size %}
-  {% if videos_count > 4 %}
+  {% assign certificates_count = site.data.certificates | size %}
+  {% if certificates_count > 4 %}
     <div class="carousel">
-      <button class="scroll-btn left" data-target="#videos-track" aria-label="Scroll videos left">‹</button>
-      <div id="videos-track" class="carousel-track" role="region" aria-label="Videos list">
-        {% for item in site.data.videos %}
+      <button class="scroll-btn left" data-target="#certificates-track" aria-label="Scroll certificates left">‹</button>
+      <div id="certificates-track" class="carousel-track" role="region" aria-label="Certificates list">
+        {% for item in site.data.certificates %}
         <article class="card">
-          <a class="thumb" href="{{ item.link }}" target="_blank" rel="noopener" aria-label="Open video">
-            <img src="{{ item.image | default: '/assets/images/placeholder_video.jpg' | relative_url }}"
+          <a class="thumb" href="{{ item.link | default: '#' }}" target="_blank" rel="noopener" aria-label="View certificate">
+            <img src="{{ item.image | default: '/assets/images/placeholder_certificate.jpg' | relative_url }}"
                  alt="{{ item.title | escape }} thumbnail"
-                 loading="lazy"
-                 {% if item.preview_gif %}data-preview="{{ item.preview_gif | relative_url }}"{% endif %}>
+                 loading="lazy">
           </a>
           <div class="card-body">
-            <h3 class="card-title"><a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.title }}</a></h3>
-            {% if item.note %}<p class="card-text">{{ item.note }}</p>{% endif %}
+            <h3 class="card-title">
+              {% if item.link %}
+                <a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.title }}</a>
+              {% else %}
+                {{ item.title }}
+              {% endif %}
+            </h3>
+            {% if item.issuer %}<p class="card-text"><strong>Issuer:</strong> {{ item.issuer }}</p>{% endif %}
+            {% if item.date %}<p class="card-text"><small>Issued: {{ item.date }}</small></p>{% endif %}
+            {% if item.description %}<p class="card-text">{{ item.description }}</p>{% endif %}
             <div class="card-actions">
-              {% if item.screenshot %}<a href="#" class="btn ghost" data-lightbox-src="{{ item.screenshot | relative_url }}">Preview</a>{% endif %}
-              <a class="btn" href="{{ item.link }}" target="_blank" rel="noopener">Watch</a>
+              {% if item.image %}<a href="#" class="btn ghost" data-lightbox-src="{{ item.image | relative_url }}">Preview</a>{% endif %}
+              {% if item.link %}<a class="btn" href="{{ item.link }}" target="_blank" rel="noopener">Verify</a>{% endif %}
             </div>
           </div>
         </article>
         {% endfor %}
       </div>
-      <button class="scroll-btn right" data-target="#videos-track" aria-label="Scroll videos right">›</button>
+      <button class="scroll-btn right" data-target="#certificates-track" aria-label="Scroll certificates right">›</button>
     </div>
   {% else %}
     <div class="gallery">
-      {% for item in site.data.videos %}
+      {% for item in site.data.certificates %}
       <article class="card">
-        <a class="thumb" href="{{ item.link }}" target="_blank" rel="noopener" aria-label="Open video">
-          <img src="{{ item.image | default: '/assets/images/placeholder_video.jpg' | relative_url }}"
+        <a class="thumb" href="{{ item.link | default: '#' }}" target="_blank" rel="noopener" aria-label="View certificate">
+          <img src="{{ item.image | default: '/assets/images/placeholder_certificate.jpg' | relative_url }}"
                alt="{{ item.title | escape }} thumbnail" loading="lazy">
         </a>
         <div class="card-body">
-          <h3 class="card-title"><a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.title }}</a></h3>
-          {% if item.note %}<p class="card-text">{{ item.note }}</p>{% endif %}
+          <h3 class="card-title">
+            {% if item.link %}
+              <a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.title }}</a>
+            {% else %}
+              {{ item.title }}
+            {% endif %}
+          </h3>
+          {% if item.issuer %}<p class="card-text"><strong>Issuer:</strong> {{ item.issuer }}</p>{% endif %}
+          {% if item.date %}<p class="card-text"><small>Issued: {{ item.date }}</small></p>{% endif %}
+          {% if item.description %}<p class="card-text">{{ item.description }}</p>{% endif %}
           <div class="card-actions">
-            {% if item.screenshot %}<a href="#" class="btn ghost" data-lightbox-src="{{ item.screenshot | relative_url }}">Preview</a>{% endif %}
-            <a class="btn" href="{{ item.link }}" target="_blank" rel="noopener">Watch</a>
+            {% if item.image %}<a href="#" class="btn ghost" data-lightbox-src="{{ item.image | relative_url }}">Preview</a>{% endif %}
+            {% if item.link %}<a class="btn" href="{{ item.link }}" target="_blank" rel="noopener">Verify</a>{% endif %}
           </div>
         </div>
       </article>
