@@ -55,7 +55,7 @@ title: "Home"
         </li>
 
         <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dbt/dbt-original.svg" alt="dbt logo" width="18" height="18">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/dbt.svg" alt="dbt logo" width="18" height="18">
           dbt
         </li>
 
@@ -80,9 +80,13 @@ title: "Home"
 
         <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform logo" width="18" height="18">
-          Terraform
+          Terraform basics
         </li>
-        
+
+         <li style="display: flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.05); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/tableau.svg" alt="Terraform logo" width="18" height="18">
+          Tableau basics
+        </li>
       </ul>
 
       <p class="social-links" style="margin-top: 1.5rem;">
@@ -97,64 +101,8 @@ title: "Home"
   </div>
 </section>
 
-<!-- ===================== Projects ===================== -->
-<section id="projects" class="section">
-  <div class="section-header">
-    <h2>🚀 Projects</h2>
-    <a class="view-all" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">All repos →</a>
-  </div>
 
-  {% assign projects_count = site.data.projects | size %}
-  {% if projects_count > 4 %}
-    <div class="carousel">
-      <button class="scroll-btn left" data-target="#projects-track" aria-label="Scroll projects left">‹</button>
-      <div id="projects-track" class="carousel-track" role="region" aria-label="Projects list">
-        {% for item in site.data.projects %}
-        <article class="card">
-          <a class="thumb" href="{{ item.link }}" target="_blank" rel="noopener" aria-label="Open project">
-            <img src="{{ item.image | default: '/assets/images/placeholder_project.jpg' | relative_url }}"
-                 alt="{{ item.title | escape }} thumbnail"
-                 loading="lazy"
-                 {% if item.preview_gif %}data-preview="{{ item.preview_gif | relative_url }}"{% endif %}>
-          </a>
-          <div class="card-body">
-            <h3 class="card-title"><a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.title }}</a></h3>
-            <p class="card-text">{{ item.description }}</p>
-            {% if item.stack %}<p class="card-tags">{{ item.stack }}</p>{% endif %}
-            <div class="card-actions">
-              {% if item.screenshot %}<a href="#" class="btn ghost" data-lightbox-src="{{ item.screenshot | relative_url }}">Preview</a>{% endif %}
-              <a class="btn" href="{{ item.link }}" target="_blank" rel="noopener">Open</a>
-            </div>
-          </div>
-        </article>
-        {% endfor %}
-      </div>
-      <button class="scroll-btn right" data-target="#projects-track" aria-label="Scroll projects right">›</button>
-    </div>
-  {% else %}
-    <div class="gallery">
-      {% for item in site.data.projects %}
-      <article class="card">
-        <a class="thumb" href="{{ item.link }}" target="_blank" rel="noopener" aria-label="Open project">
-          <img src="{{ item.image | default: '/assets/images/placeholder_project.jpg' | relative_url }}"
-               alt="{{ item.title | escape }} thumbnail" loading="lazy">
-        </a>
-        <div class="card-body">
-          <h3 class="card-title"><a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.title }}</a></h3>
-          <p class="card-text">{{ item.description }}</p>
-          {% if item.stack %}<p class="card-tags">{{ item.stack }}</p>{% endif %}
-          <div class="card-actions">
-            {% if item.screenshot %}<a href="#" class="btn ghost" data-lightbox-src="{{ item.screenshot | relative_url }}">Preview</a>{% endif %}
-            <a class="btn" href="{{ item.link }}" target="_blank" rel="noopener">Open</a>
-          </div>
-        </div>
-      </article>
-      {% endfor %}
-    </div>
-  {% endif %}
-</section>
-
-<!-- ===================== Videos ===================== -->
+<!-- ===================== Certificates ===================== -->
 <section id="certificates" class="section">
   <div class="section-header">
     <h2>📜 Certifications</h2>
@@ -222,6 +170,65 @@ title: "Home"
     </div>
   {% endif %}
 </section>
+
+<!-- ===================== Projects ===================== -->
+<section id="projects" class="section">
+  <div class="section-header">
+    <h2>🚀 Projects</h2>
+    <a class="view-all" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">All repos →</a>
+  </div>
+
+  {% assign projects_count = site.data.projects | size %}
+  {% if projects_count > 4 %}
+    <div class="carousel">
+      <button class="scroll-btn left" data-target="#projects-track" aria-label="Scroll projects left">‹</button>
+      <div id="projects-track" class="carousel-track" role="region" aria-label="Projects list">
+        {% for item in site.data.projects %}
+        <article class="card">
+          <a class="thumb" href="{{ item.link }}" target="_blank" rel="noopener" aria-label="Open project">
+            <img src="{{ item.image | default: '/assets/images/placeholder_project.jpg' | relative_url }}"
+                 alt="{{ item.title | escape }} thumbnail"
+                 loading="lazy"
+                 {% if item.preview_gif %}data-preview="{{ item.preview_gif | relative_url }}"{% endif %}>
+          </a>
+          <div class="card-body">
+            <h3 class="card-title"><a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.title }}</a></h3>
+            <p class="card-text">{{ item.description }}</p>
+            {% if item.stack %}<p class="card-tags">{{ item.stack }}</p>{% endif %}
+            <div class="card-actions">
+              {% if item.screenshot %}<a href="#" class="btn ghost" data-lightbox-src="{{ item.screenshot | relative_url }}">Preview</a>{% endif %}
+              <a class="btn" href="{{ item.link }}" target="_blank" rel="noopener">Open</a>
+            </div>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      <button class="scroll-btn right" data-target="#projects-track" aria-label="Scroll projects right">›</button>
+    </div>
+  {% else %}
+    <div class="gallery">
+      {% for item in site.data.projects %}
+      <article class="card">
+        <a class="thumb" href="{{ item.link }}" target="_blank" rel="noopener" aria-label="Open project">
+          <img src="{{ item.image | default: '/assets/images/placeholder_project.jpg' | relative_url }}"
+               alt="{{ item.title | escape }} thumbnail" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3 class="card-title"><a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.title }}</a></h3>
+          <p class="card-text">{{ item.description }}</p>
+          {% if item.stack %}<p class="card-tags">{{ item.stack }}</p>{% endif %}
+          <div class="card-actions">
+            {% if item.screenshot %}<a href="#" class="btn ghost" data-lightbox-src="{{ item.screenshot | relative_url }}">Preview</a>{% endif %}
+            <a class="btn" href="{{ item.link }}" target="_blank" rel="noopener">Open</a>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>
+
+
 
 <!-- ===================== Articles ===================== -->
 <section id="articles" class="section">
