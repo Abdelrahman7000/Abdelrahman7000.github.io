@@ -94,7 +94,7 @@ title: "Home"
           <i class="fa-brands fa-linkedin"></i>
         </a>
        <a href="https://public.tableau.com/app/profile/abdelrahman.shaban/vizzes" target="_blank" aria-label="Tableau">
-          <i class="fa-brands fa-tableau"></i>
+          <i class="fa-solid fa-chart-line"></i>
        </a>
       </p>
     </div>
