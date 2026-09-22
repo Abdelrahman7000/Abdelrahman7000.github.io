@@ -2,7 +2,7 @@
   company: "Master Works"
   location: "Riyadh, Saudi Arabia"
   period: "Dec 2024 - Apr 2026"
-  summary: "Responsible for file ingestion pipelines, dbt transformations, and automated pipeline observability."
+  # summary: "Responsible for file ingestion pipelines, dbt transformations, and automated pipeline observability."
   responsibilities:
     - "Automated end-to-end ETL workflows for production data, enabling reliable and incremental data loading into the warehouse for downstream reporting."
     - "Built and maintained data warehouse structures that captured production data changes, ensuring accurate reporting."
@@ -12,11 +12,11 @@
     - "Alteryx"
     - "SQL server"
 
-- title: "Operation Support Engineer"
+- title: "Operation Support Engineer, Internship"
   company: "Ligadata"
   location: "Alexandria, Egypt"
   period: "Aug 2022- Oct 2022"
-  summary: "Designed and optimized enterprise ETL processes operating across relational databases and data warehouses."
+  # summary: "Designed and optimized enterprise ETL processes operating across relational databases and data warehouses."
   responsibilities:
     - "Monitored Hadoop services, analyzed the cause of errors and malfunctions, provided resolutions using the provided guidelines and tools, and raised escalations to responsible teams"
   tech_stack:
