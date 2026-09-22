@@ -285,6 +285,52 @@ title: "Home"
   {% endif %}
 </section> -->
 
+
+<section id="experience" class="section">
+  <div class="section-header">
+    <h2>💼 Work Experience</h2>
+  </div>
+
+  <div class="experience-timeline">
+    {% for job in site.data.experience %}
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content card">
+        <div class="experience-header">
+          <div>
+            <h3 class="job-title">{{ job.title }}</h3>
+            <span class="company-name">{{ job.company }}</span>
+            {% if job.location %}<span class="location"> • {{ job.location }}</span>{% endif %}
+          </div>
+          <span class="date-badge">{{ job.period }}</span>
+        </div>
+
+        {% if job.summary %}
+          <p class="job-summary">{{ job.summary }}</p>
+        {% endif %}
+
+        {% if job.responsibilities %}
+        <ul class="duties-list">
+          {% for duty in job.responsibilities %}
+            <li>{{ duty }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if job.tech_stack %}
+        <div class="tech-stack-pills">
+          {% for tech in job.tech_stack %}
+            <span class="tech-pill">{{ tech }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+
 <!-- Tiny helper script for arrow buttons -->
 <script>
 (function () {
