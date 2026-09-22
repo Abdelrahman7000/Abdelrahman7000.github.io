@@ -90,12 +90,12 @@ title: "Home"
       </ul>
 
       <p class="social-links" style="margin-top: 1.5rem;">
-        <a href="https://www.linkedin.com/in/michaelshoemaker1" target="_blank" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/abdelrahman-shaban-41607b167/" target="_blank" aria-label="LinkedIn">
           <i class="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://www.youtube.com/@dataslinger6379" target="_blank" aria-label="YouTube">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
+       <a href="https://public.tableau.com/app/profile/abdelrahman.shaban/vizzes" target="_blank" aria-label="Tableau">
+          <i class="fa-brands fa-tableau"></i>
+       </a>
       </p>
     </div>
   </div>
