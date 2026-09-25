@@ -30,7 +30,7 @@
   preview_gif: "/assets/images/alteryx-project.jpg"
   screenshot:  "/assets/images/alteryx-project.jpg"
 
-  - title: "Sales data analytics"
+- title: "Sales data analytics"
   link: "https://github.com/Abdelrahman7000/sales-analytics"
   description: "ELT pipeline for sales data using dbt to build the dimensional model for the data"
   stack: "dbt · postgresql · Airbyte · sql server"
