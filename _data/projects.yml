@@ -30,6 +30,14 @@
   preview_gif: "/assets/images/alteryx-project.jpg"
   screenshot:  "/assets/images/alteryx-project.jpg"
 
+  - title: "Sales data analytics"
+  link: "https://github.com/Abdelrahman7000/sales-analytics"
+  description: "ELT pipeline for sales data using dbt to build the dimensional model for the data"
+  stack: "dbt · postgresql · Airbyte · sql server"
+  image: "/assets/images/delyyy.jpg"
+  preview_gif: "/assets/images/delyyy.jpg"
+  screenshot:  "/assets/images/delyyy.jpg"
+
 # - title: "YouTube Semantic Search"
 #   link: "https://github.com/MichaelShoemaker/PlaylistGuide-LLM"
 #   description: "Ask questions across a YouTube playlist; returns time-coded hits with RAG."
