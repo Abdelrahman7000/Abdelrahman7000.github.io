@@ -38,13 +38,13 @@
   preview_gif: "/assets/images/delyyy.jpg"
   screenshot:  "/assets/images/delyyy.jpg"
 
-# - title: "Shell from scratch"
-#   link: "https://github.com/Abdelrahman7000/build-your-own-shell-challenge"
-#   description: "My solution for Codecraters challenge: build you own shell in python"
-#   stack: "Python"
-#   image: "/assets/images/CLI-stands-forHero-1024x512.png"
-#   preview_gif: "/assets/images/CLI-stands-forHero-1024x512.png"
-#   screenshot:  "/assets/images/CLI-stands-forHero-1024x512.png"
+- title: "Shell from scratch"
+  link: "https://github.com/Abdelrahman7000/build-your-own-shell-challenge"
+  description: "My solution for Codecraters challenge: build you own shell in python"
+  stack: "Python"
+  image: "/assets/images/CLI-stands-forHero-1024x512.png"
+  preview_gif: "/assets/images/CLI-stands-forHero-1024x512.png"
+  screenshot:  "/assets/images/CLI-stands-forHero-1024x512.png"
 
 
 # - title: "YouTube Semantic Search"
