@@ -40,7 +40,7 @@
 
 - title: "Shell from scratch [In Progress]"
   link: "https://github.com/Abdelrahman7000/build-your-own-shell-challenge"
-  description: "My solution for Codecraters challenge: build you own shell in python"
+  description: "My solution for Codecrafters challenge: build you own shell"
   stack: "Python"
   image: "/assets/images/CLI-stands-forHero-1024x512.png"
   preview_gif: "/assets/images/CLI-stands-forHero-1024x512.png"
