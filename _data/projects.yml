@@ -38,7 +38,7 @@
   preview_gif: "/assets/images/delyyy.jpg"
   screenshot:  "/assets/images/delyyy.jpg"
 
-- title: "Shell from scratch"
+- title: "Shell from scratch [In Progress]"
   link: "https://github.com/Abdelrahman7000/build-your-own-shell-challenge"
   description: "My solution for Codecraters challenge: build you own shell in python"
   stack: "Python"
