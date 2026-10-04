@@ -1,0 +1,121 @@
+# _data/code_samples.yml
+
+- title: "Data Cleaning and processing using SQL"
+  type: "SQL"
+  #description: "Analyzes customer retention and repeat purchase behavior."
+  code: |
+      with cte as (
+        SELECT ticker,max(open) highest_open
+        from stock_prices
+        GROUP BY 1
+      ),
+    
+    cte2 as (
+      SELECT ticker, min(open) lowest_open
+      from stock_prices
+      GROUP BY 1
+    ),
+    cte3 as (
+      select cte.ticker,cte.highest_open,s.date highest_mth
+      FROM cte 
+      join stock_prices s
+      on cte.highest_open=s .open
+    ),
+    
+    cte4 as (
+      select cte2.ticker,cte2.lowest_open,s.date lowest_mth
+      FROM cte2 
+      join stock_prices s
+      on cte2.lowest_open=s.open
+    )
+    
+    SELECT cte3.ticker,
+            replace(to_char(cte3.highest_mth,'Mon-YYYY'),' ','') highest_mth,
+            cte3.highest_open,
+            replace(to_char(cte4.lowest_mth,'Mon-YYYY'),' ','') lowest_mth,
+            cte4.lowest_open
+    from cte3
+    join cte4
+    using (ticker)
+    ORDER BY 1
+    
+- title: "SQL in dbt"
+  type: "dbt"
+  description: "A dbt model that joins multiple underlying staging models and materialized as view."
+  code: |
+         {{
+          config(
+            materialized='view'
+          )
+        }}
+        
+        with cte as (
+            select 
+                c.CustomerID,
+                c.CustomerName,
+                c.Country,
+                c.Email,
+                c.Phone,
+                n.NationName,
+                n.Population,
+                r.RegionName
+            from {{ ref('stg_customers') }} c 
+            inner join{{ ref('stg_nations') }} n on n.NationID=c.NationID
+            inner join {{ ref('stg_regions') }} r on r.RegionID=n.RegionID
+        )
+        select *
+        from cte
+
+- title: "dbt Data Tests"
+  type: "dbt"
+  description: "Schema tests for staging models, including primary keys, relationships, and accepted values."
+  code: |
+    version: 2
+
+    models:
+      - name: stg_customers
+        description: This model cleans the customer data, there is one record for each customer
+        columns:
+          - name: CustomerID
+            description: Primary key
+            tests:
+              - unique
+              - not_null
+
+      - name: stg_orders
+        description: This converts the data types of the order columns.
+        columns:
+          - name: OrderID
+            tests:
+              - unique
+              - not_null
+
+          - name: CustomerID
+            tests:
+              - not_null
+              - relationships:
+                  to: ref('stg_customers')
+                  field: CustomerID
+
+      - name: stg_nations
+        columns:
+          - name: NationID
+            tests:
+              - unique
+              - not_null
+
+      - name: stg_regions
+        columns:
+          - name: RegionName
+            tests:
+              - accepted_values:
+                  values:
+                    - 'North America'
+                    - 'Europe'
+                    - 'Oceania'
+                    - 'Asia'
+                    - 'South America'
+
+      - name: customer_details
+        description: This model joins regions, nations, and customers tables into one view.
+
