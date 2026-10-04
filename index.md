@@ -394,31 +394,67 @@ layout: default
 
 
 <!-- ===================== Articles ===================== -->
-<section id="samples" class="section">
-  <div class="section-header">
-    <h2>samples</h2>
+
+<section id="samples" class="section"> <div class="section-header"> <h2>samples</h2> </div>
+
+{% for item in site.data.code_samples %}
+
+<div style="
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 12px;
+">
+
+  <h3 style="
+    margin: 0 0 0.5rem;
+    color: #ffffff;
+    font-size: 1.3rem;
+  ">
+    {{ item.title }}
+  </h3>
+
+  <div style="
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    background: #1d4ed8;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  ">
+    {{ item.type }}
   </div>
 
-  <div class="code-grid">
-    {% for item in site.data.code_samples %}
-    <article class="code-card">
+  {% if item.description %}
+  <p style="
+    color: #cbd5e1;
+    margin: 0 0 1rem;
+  ">
+    {{ item.description }}
+  </p>
+  {% endif %}
 
-      <div class="code-card-header">
-        <div>
-          <h3>{{ item.title }}</h3>
-          <span class="code-type">{{ item.type }}</span>
-        </div>
-      </div>
+  <pre style="
+    background: #020617;
+    color: #e2e8f0;
+    padding: 1.25rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    white-space: pre;
+    font-family: monospace;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    border: 1px solid #334155;
+  "><code>{{ item.code | escape }}</code></pre>
 
-      <p class="code-description">
-        {{ item.description }}
-      </p>
+</div>
 
-      <pre><code class="language-sql">{{ item.code | escape }}</code></pre>
 
-    </article>
-    {% endfor %}
-  </div>
+{% endfor %}
+
 </section>
 
 <!-- <section id="articles" class="section">
