@@ -393,6 +393,33 @@ title: "Home"
 
 
 <!-- ===================== Articles ===================== -->
+<section id="samples" class="section">
+  <div class="section-header">
+    <h2>💻 SQL & dbt</h2>
+  </div>
+
+  <div class="code-grid">
+    {% for item in site.data.code_samples %}
+    <article class="code-card">
+
+      <div class="code-card-header">
+        <div>
+          <h3>{{ item.title }}</h3>
+          <span class="code-type">{{ item.type }}</span>
+        </div>
+      </div>
+
+      <p class="code-description">
+        {{ item.description }}
+      </p>
+
+      <pre><code class="language-sql">{{ item.code | escape }}</code></pre>
+
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
 <!-- <section id="articles" class="section">
   <div class="section-header">
     <h2>✍️ Articles</h2>
