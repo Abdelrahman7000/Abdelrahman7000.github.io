@@ -1,5 +1,6 @@
 ---
 title: "Home"
+layout: default
 ---
 
 <!-- Inline carousel-only styles (kept here so they don't clash with grid) -->
