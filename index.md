@@ -395,7 +395,7 @@ layout: default
 
 <!-- ===================== Articles ===================== -->
 
-<section id="samples" class="section"> <div class="section-header"> <h2>samples</h2> </div>
+<section id="samples" class="section"> <div class="section-header"> <h2>SQL code samples</h2> </div>
 
 {% for item in site.data.code_samples %}
 
