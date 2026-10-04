@@ -395,7 +395,7 @@ title: "Home"
 <!-- ===================== Articles ===================== -->
 <section id="samples" class="section">
   <div class="section-header">
-    <h2>💻 SQL & dbt</h2>
+    <h2>samples</h2>
   </div>
 
   <div class="code-grid">
