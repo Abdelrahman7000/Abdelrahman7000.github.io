@@ -4,10 +4,10 @@
   period: "Dec 2024 - Apr 2026"
   # summary: "Responsible for file ingestion pipelines, dbt transformations, and automated pipeline observability."
   responsibilities:
-    - "Automated end-to-end ETL workflows for production data, enabling reliable and incremental data loading into the warehouse for downstream reporting."
-    - "Built and maintained data warehouse structures that captured production data changes, ensuring accurate reporting."
+    - "Built ETL workflows using Alteryx for production data with incremental data loading into sql server as a data warehouse for mining related data."
+    - "Built and maintained the data warehouse structures that captured production data changes, ensuring accurate reporting."
     - "Improved data quality across 30+ warehouse tables by identifying and tracking records removed from source systems, resolving historical data inconsistencies."
-    - "Supported a major data migration and integration project, unifying data from two differently structured databases into a single reporting-ready database."
+    - "Supported a data migration project from ORACLE to SQL server database, and unified the data from both of them into a single reporting-ready database."
   tech_stack:
     - "Alteryx"
     - "SQL server"
