@@ -14,6 +14,14 @@
   preview_gif: "/assets/images/realtime-pipeline.jpg"
   screenshot: "/assets/images/realtime-pipeline.jpg"
 
+  - title: "olist-e-commerce-data-pipeline"
+  link: "https://github.com/Abdelrahman7000/dbt_olist_ecommerce_data-pipeline"
+  description: "dbt data pipeline transforms raw marketplace data into tested, dimensional Gold data marts, powering reliable and actionable business intelligence."
+  stack: "dbt · Postgres · Docker · Tableau"
+  image: "/assets/images/dag.jpg"
+  preview_gif: "/assets/images/dag.jpg"
+  screenshot: "/assets/images/dag.jpg"
+
 - title: "JSON data from Datalake into postgres for analysis"
   link: "https://github.com/Abdelrahman7000/etl_for_social_media_data"
   description: "An ETL pipeline that extracts social media JSON data, loads it into MinIO, transforms it with PySpark into a star schema, and loads the final model into PostgreSQL. The schema includes user, post, calendar, and comment dimensions, along with an engagement fact table for analyzing user interactions."
