@@ -17,7 +17,7 @@
 - title: "olist-e-commerce-data-pipeline"
   link: "https://github.com/Abdelrahman7000/dbt_olist_ecommerce_data-pipeline"
   description: "dbt data pipeline transforms raw marketplace data into tested, dimensional Gold data marts, powering reliable and actionable business intelligence."
-  stack: "dbt · Postgres · Docker · Tableau"
+  stack: "dbt · Postgres · Docker · metabase"
   image: "/assets/images/dag.jpg"
   preview_gif: "/assets/images/dag.jpg"
   screenshot: "/assets/images/dag.jpg"
